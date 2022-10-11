@@ -1,0 +1,36 @@
+Description: Fix spelling errors found by Lintian
+Author: Axel Beckert <abe@debian.org>
+Forwarded: no
+
+--- a/README.md
++++ b/README.md
+@@ -61,11 +61,11 @@
+ 
+ - generate\_ppport\_h
+ 
+-    Genereate ppport.h by [Devel::PPPort](https://metacpan.org/pod/Devel::PPPort).
++    Generate ppport.h by [Devel::PPPort](https://metacpan.org/pod/Devel::PPPort).
+ 
+ - generate\_xshelper\_h
+ 
+-    Genereate xshelper.h which is a helper header file to include EXTERN.h, perl.h, XSUB.h and ppport.h, 
++    Generate xshelper.h which is a helper header file to include EXTERN.h, perl.h, XSUB.h and ppport.h, 
+     and defines some portability stuff which are not supported by ppport.h.
+ 
+     It is porting from [Module::Install::XSUtil](https://metacpan.org/pod/Module::Install::XSUtil).
+--- a/lib/Module/Build/XSUtil.pm
++++ b/lib/Module/Build/XSUtil.pm
+@@ -452,11 +452,11 @@
+ 
+ =item generate_ppport_h
+ 
+-Genereate ppport.h by L<Devel::PPPort>.
++Generate ppport.h by L<Devel::PPPort>.
+ 
+ =item generate_xshelper_h
+ 
+-Genereate xshelper.h which is a helper header file to include EXTERN.h, perl.h, XSUB.h and ppport.h, 
++Generate xshelper.h which is a helper header file to include EXTERN.h, perl.h, XSUB.h and ppport.h, 
+ and defines some portability stuff which are not supported by ppport.h.
+ 
+ It is porting from L<Module::Install::XSUtil>.

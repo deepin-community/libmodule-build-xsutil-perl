@@ -1,0 +1,31 @@
+Source: libmodule-build-xsutil-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Axel Beckert <abe@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper (>= 10),
+               libmodule-build-perl (>= 0.400500),
+               perl
+Build-Depends-Indep: libcapture-tiny-perl,
+                     libcwd-guard-perl,
+                     libdevel-checkcompiler-perl,
+                     libfile-copy-recursive-perl
+Standards-Version: 4.1.4
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libmodule-build-xsutil-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libmodule-build-xsutil-perl.git
+Homepage: https://metacpan.org/release/Module-Build-XSUtil
+Rules-Requires-Root: no
+
+Package: libmodule-build-xsutil-perl
+Architecture: all
+Depends: libdevel-checkcompiler-perl,
+         libmodule-build-perl,
+         ${misc:Depends},
+         ${perl:Depends}
+Description: Module::Build class for building XS modules
+ Module::Build::XSUtil is subclass of Module::Build for support building XS
+ modules.
+ .
+ Beyond other features it supports checking for C99 and C++ compilers
+ as well as to enable compiler warnings or debug options.

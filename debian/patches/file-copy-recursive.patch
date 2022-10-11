@@ -1,0 +1,19 @@
+Description: Switch back from File::Copy::Recursive::Reduced to File::Copy::Recursive.
+ The latter had a bug on *BSD, which is fixed by now, and the former is not
+ packaged in Debian.
+Origin: vendor
+Forwarded: not needed
+Author: gregor herrmann <gregoa@debian.org>
+Last-Update: 2018-06-23
+
+--- a/t/01_build.t
++++ b/t/01_build.t
+@@ -2,7 +2,7 @@
+ use Config;
+ use File::Spec::Functions qw(catdir catfile rel2abs);
+ use File::Temp qw(tempdir);
+-use File::Copy::Recursive::Reduced 'dircopy';
++use File::Copy::Recursive 'dircopy';
+ use Cwd::Guard qw(cwd_guard);
+ use Capture::Tiny qw(capture);
+ 
